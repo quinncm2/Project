@@ -1,17 +1,39 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-        body {
-            background-color: rgb(50, 50, 50);
-            }
-        h1{
-            padding: 20px;
-            color: Red;
-            font-family: verdana;
-            font-size: 750%;
-            }
-            
+body {
+  background-color: rgb(50, 50, 50);
+  }
+h1 {
+  text-align:center;
+  padding: 20px;
+  color: #781616;
+  font-family: verdana;
+  font-size: 750%;
+  }
+        
+/*button*/
+.button {
+   height:100px;
+   width:250px;
+   border: none;
+   background: #781616;
+   padding: 15px 19px;
+   margin-left: 100px;
+   border-radius: 14px;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   background: #781616;
+   color: #ccc;
+   }
+   
 /* footer */
-
 footer {
   margin-top: 45px;
   padding-top: 5px;
