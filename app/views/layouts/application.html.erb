@@ -12,29 +12,14 @@
     <![endif]-->
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-          <%= link_to "Paladin PC", 'home', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Log in",   '#' %></li>
-            <li><%= link_to "Sign up",   '/users/new' %></li>
-            <li><%= link_to "Shopping Cart", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render 'layouts/header' %>
     <div class="container">
+      <% flash.each do |message_type, message| %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+      <% end %>
       <%= yield %>
-      <footer class="footer">
-          <nav>
-            <ul>
-               <li><a href="/static_pages/about">About</a></li>
-               <li><a href="/static_pages/contact">Contact</a></li>
-               <li><a href="/app/views/static_pages/news.html.erb">News</a></li>
-            </ul>
-          </nav>
-        </footer>
+      <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>
