@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get  '/buy',   to: 'static_pages#Buy'
   get  '/finish',   to: 'static_pages#Finish'
   get  '/micropost', to: 'static_pages#contact'
+  get  '/users', to: 'users#index'
   get 'static_pages/news'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
