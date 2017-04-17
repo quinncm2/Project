@@ -1,29 +1,32 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 body {
-  background-color: rgb(250,250,250);
+  background-color: rgb(135,206,250);
   }
 h1 {
   text-align:center;
   padding: 20px;
-  color: #781616;
+  color: #2f4f4f;
   font-family: verdana;
   font-size: 750%;
   }
 h2 {
   text-align:center;
   padding: 10px;
-  color: #781616;
+  color: #2f4f4f;
   font-family: verdana;
-  font-size: 750%;
+  font-size: 250%;
   }
+img { 
+    width:100%; 
+}
         
 /*button*/
 .button {
    height:100px;
    width:250px;
    border: none;
-   background: #781616;
+   background: #2f4f4f;
    padding: 15px 19px;
    margin-left: 100px;
    border-radius: 14px;
@@ -36,7 +39,28 @@ h2 {
    vertical-align: middle;
    }
 .button:hover {
-   background: #781616;
+   background: #2f4f4f;
+   color: #ccc;
+   }
+   
+.button2 {
+   height:100px;
+   width:250px;
+   border: none;
+   background: #2f4f4f;
+   padding: 15px 19px;
+   margin-left: 10px;
+   border-radius: 14px;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button2:hover {
+   background: #2f4f4f;
    color: #ccc;
    }
    
@@ -45,11 +69,11 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: #000;
 }
 
 footer a {
-  color: #555;
+  color: #000;
 }
 
 footer a:hover {
@@ -90,7 +114,7 @@ $gray-medium-light: #eaeaea;
 
 aside {
   section.user_info {
-    margin-top: 20px;
+    margin-top: 50px;
   }
   section {
     padding: 10px 0;
@@ -177,6 +201,7 @@ input {
   .user {
     margin-top: 5em;
     padding-top: 0;
+    
   }
   .content {
     display: block;
@@ -187,7 +212,7 @@ input {
     }
   }
   .timestamp {
-    color: $gray-light;
+    color: #2f4f4f;
     display: block;
     margin-left: 60px;
   }
@@ -211,3 +236,56 @@ span.picture {
     border: 0;
   }
 }
+
+.btn .btn-primary {
+  color: #2f4f4f;
+}
+
+
+/*Checkout*/
+
+ 
+.input-fields label {
+  display: block;
+  margin-bottom: 10px;
+  color: #b4b4b4;
+}
+ 
+.info {
+  font-size: 12px;
+  font-weight: 300;
+  display: block;
+  margin-top: 50px;
+  opacity: .5;
+  color: #2e2e2e;
+}
+ 
+div[class*='column'] {
+  width: 382px;
+}
+ 
+.small-inputs {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+ 
+.small-inputs div {
+  width: 182px;
+}
+
+.btn {
+  font-size: 16px;
+  width: 163px;
+  height: 48px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 23px;
+}
+
+.blue-border {
+  border: 1px solid rgb(110, 178, 251);
+}
+

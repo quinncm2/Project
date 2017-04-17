@@ -1,0 +1,35 @@
+<div class="checkout-panel">
+  <div class="panel-body">
+    <h1 class="title">Checkout</h1>
+    
+    <div class="input-fields">
+      <div class="column-1">
+        <label for="cardholder">Cardholder's Name</label>
+        <input type="text" id="cardholder" />
+ 
+        <div class="small-inputs">
+          <div>
+            <label for="date">Valid thru</label>
+            <input type="text" id="date"/>
+          </div>
+ 
+          <div>
+            <label for="verification">CVV / CVC *</label>
+            <input type="password" id="verification"/>
+          </div>
+        </div>
+ 
+      </div>
+      <div class="column-2">
+        <label for="cardnumber">Card Number</label>
+        <input type="password" id="cardnumber"/>
+      </div>
+    </div>
+  </div>
+    <button id="nextButton" class="btn" >Finished</button>
+        <script type="text/javascript">
+            document.getElementById("nextButton").onclick = function () {
+                location.href = "/finish";
+            };
+        </script>
+</div>
