@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
   get  '/about',   to: 'static_pages#about'
+  get  '/news',   to: 'static_pages#news'
   get  '/cheap',   to: 'static_pages#Cheap'
   get  '/mid',   to: 'static_pages#Mid'
   get  '/expensive',   to: 'static_pages#Expensive'
